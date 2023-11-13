@@ -1,0 +1,63 @@
+:root {
+  --light-color: #fbf5f3;
+  --primary-color: #272838;
+  --secondary-color: #5d536b;
+  --accent-color: #a7d49b;
+  --box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: var(--light-color);
+}
+
+h1 {
+  font-family: "Domine", serif;
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+h2,
+h3,
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.hero {
+  margin: 40px;
+}
+
+.bio {
+  padding-right: 70px;
+}
+
+.surname {
+  font-size: 96px;
+}
+
+.job-title {
+  font-size: 22px;
+  color: var(--secondary-color);
+}
+
+.download-bt {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+footer {
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  padding: 65px 56px 34px 56px;
+  margin-top: 88px;
+}
+
+.dark-color {
+  color: var(--primary-color);
+}
+
+.light-color {
+  color: var(--light-color);
+}
