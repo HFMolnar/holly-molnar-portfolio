@@ -22,8 +22,17 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+.navbar {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+
+.navbar ul {
+  text-align: right;
+}
+
 .hero {
-  margin: 40px;
+  margin: 150px 40px 40px 40px;
 }
 
 .bio {
@@ -47,6 +56,27 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+.logo-light {
+  margin-bottom: 20px;
+}
+
+.skills-banner {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px var(--primary-color);
+  border-bottom: solid 1px var(--primary-color);
+  padding: 20px 10px;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.skills-banner li {
+  list-style: none;
+}
+
+.cards {
+  display: flex;
+}
 footer {
   color: var(--light-color);
   background-color: var(--primary-color);
@@ -60,4 +90,13 @@ footer {
 
 .light-color {
   color: var(--light-color);
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  padding: 6px 0;
 }
