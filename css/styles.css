@@ -33,9 +33,10 @@ p {
 
 .hero {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 150px 40px 40px 40px;
-  padding: 0 70px;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .bio-text {
@@ -52,10 +53,9 @@ p {
   color: var(--secondary-color);
 }
 
-.profile-img {
-  display: flex;
-  justify-content: flex-end;
-}
+/* .profile-image {
+  max-width: 100%;
+} */
 
 .download-bt {
   background-color: var(--secondary-color);
@@ -72,6 +72,8 @@ p {
 .skills-banner {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
   border-top: solid 1px var(--primary-color);
   border-bottom: solid 1px var(--primary-color);
   padding: 20px 10px;
@@ -81,21 +83,7 @@ p {
 
 .skills-banner li {
   list-style: none;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.cards h3 {
-  padding-top: 20px;
-  font-size: 20px;
-  font-family: "Domine", serif;
-}
-
-.cards img {
-  box-shadow: var(--box-shadow);
+  font-family: "Raleway", sans-serif;
 }
 
 .homepage-portfolio {
@@ -108,8 +96,26 @@ p {
 
 .all-projects-link {
   font-size: 12px;
-  text-align: right;
-  padding-bottom: 30px;
+  color: var(--secondary-color);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  padding-top: 30px;
+}
+
+.cards img {
+  box-shadow: var(--box-shadow);
+}
+.cards h3 {
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: "Domine", serif;
+  text-align: center;
 }
 
 footer {
@@ -117,6 +123,20 @@ footer {
   background-color: var(--primary-color);
   padding: 65px 56px 34px 56px;
   margin-top: 88px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.legal-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .dark-color {
@@ -141,6 +161,29 @@ footer {
   font-size: 12px;
 }
 
-.privacy-links {
-  text-align: right;
+@media screen and (max-width: 1200px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+
+  /* .skills-banner {
+    flex-wrap: wrap;
+  } */
+  .cards {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .profile-img-container {
+    padding-top: 40px;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three {
+    padding-bottom: 30px;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
 }
