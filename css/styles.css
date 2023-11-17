@@ -32,10 +32,14 @@ p {
 }
 
 .hero {
+  display: flex;
+  flex-wrap: wrap;
   margin: 150px 40px 40px 40px;
+  padding: 0 70px;
 }
 
-.bio {
+.bio-text {
+  margin-bottom: 40px;
   padding-right: 70px;
 }
 
@@ -48,10 +52,15 @@ p {
   color: var(--secondary-color);
 }
 
+.profile-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .download-bt {
   background-color: var(--secondary-color);
   color: var(--light-color);
-  padding: 10px;
+  padding: 15px 20px;
   border-radius: 10px;
   font-family: "Raleway", sans-serif;
 }
@@ -76,7 +85,33 @@ p {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
 }
+
+.cards h3 {
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: "Domine", serif;
+}
+
+.cards img {
+  box-shadow: var(--box-shadow);
+}
+
+.homepage-portfolio {
+  margin: 40px;
+}
+
+.homepage-portfolio h2 {
+  font-family: "Domine", serif;
+}
+
+.all-projects-link {
+  font-size: 12px;
+  text-align: right;
+  padding-bottom: 30px;
+}
+
 footer {
   color: var(--light-color);
   background-color: var(--primary-color);
@@ -99,4 +134,13 @@ footer {
 
 .footer-nav li {
   padding: 6px 0;
+}
+
+.copyright-text,
+.privacy-links {
+  font-size: 12px;
+}
+
+.privacy-links {
+  text-align: right;
 }
