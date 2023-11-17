@@ -40,8 +40,8 @@ p {
 }
 
 .bio-text {
-  margin-bottom: 40px;
-  padding-right: 70px;
+  margin: 20px 0;
+  padding-right: 150px;
 }
 
 .surname {
@@ -53,12 +53,19 @@ p {
   color: var(--secondary-color);
 }
 
-/* .profile-image {
+.profile-img-container {
+  min-width: 470px;
+}
+
+.profile-image {
   max-width: 100%;
-} */
+  height: auto;
+}
 
 .download-bt {
+  display: inline-block;
   background-color: var(--secondary-color);
+  margin: 30px 0;
   color: var(--light-color);
   padding: 15px 20px;
   border-radius: 10px;
@@ -84,6 +91,7 @@ p {
 .skills-banner li {
   list-style: none;
   font-family: "Raleway", sans-serif;
+  padding: 0 10px;
 }
 
 .homepage-portfolio {
@@ -122,7 +130,7 @@ footer {
   color: var(--light-color);
   background-color: var(--primary-color);
   padding: 65px 56px 34px 56px;
-  margin-top: 88px;
+  margin-top: 55px;
 }
 
 .footer-content {
@@ -139,14 +147,6 @@ footer {
   justify-content: space-between;
 }
 
-.dark-color {
-  color: var(--primary-color);
-}
-
-.light-color {
-  color: var(--light-color);
-}
-
 .footer-nav {
   list-style: none;
   padding: 0;
@@ -161,29 +161,35 @@ footer {
   font-size: 12px;
 }
 
-@media screen and (max-width: 1200px) {
+/* ------ */
+
+.dark-color {
+  color: var(--primary-color);
+}
+
+.light-color {
+  color: var(--light-color);
+}
+
+@media screen and (max-width: 1000px) {
   .hero {
     flex-wrap: wrap;
   }
 
-  /* .skills-banner {
-    flex-wrap: wrap;
-  } */
+  .bio-text {
+    padding-right: 0;
+  }
+
   .cards {
-    flex-wrap: wrap;
     align-items: center;
   }
-  .profile-img-container {
-    padding-top: 40px;
+  .profile-image {
+    display: none;
   }
 
   .card-one,
   .card-two,
   .card-three {
     padding-bottom: 30px;
-  }
-
-  .footer {
-    margin-top: 40px;
   }
 }
