@@ -171,7 +171,7 @@ footer {
   color: var(--light-color);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
   .hero {
     flex-wrap: wrap;
   }
