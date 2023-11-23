@@ -22,6 +22,8 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+/* index */
+
 .navbar {
   background-color: var(--light-color);
   color: var(--primary-color);
@@ -126,6 +128,8 @@ p {
   text-align: center;
 }
 
+/* footer */
+
 footer {
   color: var(--light-color);
   background-color: var(--primary-color);
@@ -156,6 +160,11 @@ footer {
   padding: 6px 0;
 }
 
+.footer-nav a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
 .copyright-text,
 .privacy-links {
   font-size: 12px;
@@ -163,6 +172,33 @@ footer {
 
 .fa-github {
   padding-right: 10px;
+}
+
+/* about */
+
+.about-hero {
+  background-color: var(--primary-color);
+  height: 500px;
+  padding-top: 225px;
+}
+
+.about-hero h1 {
+  color: var(--accent-color);
+  font-size: 60px;
+  text-align: center;
+  font-family: "Domine", serif;
+}
+
+.about-hero h2 {
+  color: var(--light-color);
+  font-size: 20px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.about-main-body {
+  padding: 40px;
 }
 
 /* ------ */
