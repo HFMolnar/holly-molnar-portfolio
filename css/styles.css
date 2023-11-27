@@ -128,6 +128,15 @@ p {
   text-align: center;
 }
 
+.project-img {
+  transition: all 150ms ease-in-out;
+}
+
+.project-img:hover {
+  cursor: pointer;
+  scale: 102%;
+}
+
 /* footer */
 
 footer {
@@ -160,7 +169,8 @@ footer {
   padding: 6px 0;
 }
 
-.footer-nav a {
+.footer-nav a,
+i {
   text-decoration: none;
   color: var(--light-color);
 }
@@ -170,26 +180,26 @@ footer {
   font-size: 12px;
 }
 
-.fa-github {
+.fa-linkedin {
   padding-right: 10px;
 }
 
 /* about */
 
-.about-hero {
+.dark-hero {
   background-color: var(--primary-color);
   height: 500px;
   padding-top: 225px;
 }
 
-.about-hero h1 {
+.dark-hero h1 {
   color: var(--accent-color);
   font-size: 60px;
   text-align: center;
   font-family: "Domine", serif;
 }
 
-.about-hero h2 {
+.dark-hero h2 {
   color: var(--light-color);
   font-size: 20px;
   text-align: center;
@@ -197,8 +207,31 @@ footer {
   font-weight: 300;
 }
 
-.about-main-body {
+.dark-main-body {
   padding: 40px;
+}
+
+/* contact */
+
+.light-hero {
+  background-color: var(--accent-color);
+  height: 500px;
+  padding-top: 225px;
+}
+
+.light-hero h1 {
+  color: var(--primary-color);
+  font-size: 60px;
+  text-align: center;
+  font-family: "Domine", serif;
+}
+
+.light-hero h2 {
+  color: var(--primary-color);
+  font-size: 20px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
 }
 
 /* ------ */
@@ -231,5 +264,14 @@ footer {
   .card-two,
   .card-three {
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .about-hero h2 {
+    padding: 0 20px;
+  }
+  .contact-hero h2 {
+    padding: 0 20px;
   }
 }
