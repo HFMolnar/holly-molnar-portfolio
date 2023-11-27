@@ -234,6 +234,29 @@ i {
   font-weight: 300;
 }
 
+.contact-form {
+  padding: 40px 80px 0 80px;
+}
+
+.submit-button {
+  display: block;
+  margin: 15px auto;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border: var(--accent-color) solid 1px;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  transition: all 150ms ease-in-out;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
 /* ------ */
 
 .dark-color {
