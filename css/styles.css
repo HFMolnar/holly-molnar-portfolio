@@ -186,53 +186,18 @@ i {
 
 /* about */
 
-.dark-hero {
-  background-color: var(--primary-color);
-  height: 500px;
-  padding-top: 225px;
+.about-image {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border-radius: 5px;
 }
 
-.dark-hero h1 {
-  color: var(--accent-color);
-  font-size: 60px;
-  text-align: center;
-  font-family: "Domine", serif;
-}
-
-.dark-hero h2 {
-  color: var(--light-color);
-  font-size: 20px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-}
-
-.dark-main-body {
-  padding: 40px;
+.about-main-content {
+  padding: 50px 80px 0 80px;
 }
 
 /* contact */
-
-.light-hero {
-  background-color: var(--accent-color);
-  height: 500px;
-  padding-top: 225px;
-}
-
-.light-hero h1 {
-  color: var(--primary-color);
-  font-size: 60px;
-  text-align: center;
-  font-family: "Domine", serif;
-}
-
-.light-hero h2 {
-  color: var(--primary-color);
-  font-size: 20px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-}
 
 .contact-form {
   padding: 40px 80px 0 80px;
@@ -257,7 +222,57 @@ i {
   color: var(--light-color);
 }
 
+/* portfolio */
+
+.project-info a {
+  color: var(--secondary-color);
+}
+
 /* ------ */
+
+/* heros */
+
+.dark-hero {
+  background-color: var(--primary-color);
+  height: 500px;
+  padding-top: 225px;
+}
+
+.dark-hero h1 {
+  color: var(--accent-color);
+  font-size: 60px;
+  text-align: center;
+  font-family: "Domine", serif;
+}
+
+.dark-hero h2 {
+  color: var(--light-color);
+  font-size: 20px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.light-hero {
+  background-color: var(--accent-color);
+  height: 500px;
+  padding-top: 225px;
+}
+
+.light-hero h1 {
+  color: var(--primary-color);
+  font-size: 60px;
+  text-align: center;
+  font-family: "Domine", serif;
+}
+
+.light-hero h2 {
+  color: var(--primary-color);
+  font-size: 20px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
 
 .dark-color {
   color: var(--primary-color);
@@ -291,10 +306,13 @@ i {
 }
 
 @media screen and (max-width: 490px) {
-  .about-hero h2 {
+  .dark-hero h2 {
     padding: 0 20px;
   }
   .contact-hero h2 {
     padding: 0 20px;
+  }
+  .about-main-content {
+    padding: 30px 60px 0 60px;
   }
 }
