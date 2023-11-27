@@ -222,6 +222,12 @@ i {
   color: var(--light-color);
 }
 
+small {
+  display: block;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
 /* portfolio */
 
 .project-info a {
